@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ARIMA</title>
+	<style>
+		body {
+			background-color: blue;
+			margin: 0;
+			padding: 0;
+			font-family: Arial, sans-serif;
+		}
+
+		header {
+			background-color: white;
+			padding: 20px;
+			text-align: center;
+			font-size: 24px;
+			font-weight: bold;
+			box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.25);
+		}
+
+		footer {
+			background-color: white;
+			padding: 10px;
+			text-align: center;
+			font-size: 14px;
+			color: #888;
+			box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.25);
+		}
+
+		main {
+			padding: 20px;
+			color: white;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		ARIMA
+	</header>
+
+	<main>
+		<h1>ARIMA</h1>
+		<p><h1>Introduction<h1>
+The analysis of experimental data that have been observed at different points
+in time leads to new and unique problems in statistical modeling and inference. The obvious correlation introduced by the sampling of adjacent points
+in time can severely restrict the applicability of the many conventional statistical methods traditionally dependent on the assumption that these adjacent
+observations are independent and identically distributed. The systematic approach by which one goes about answering the mathematical and statistical
+questions posed by these time correlations is commonly referred to as time
+series analysis.
+The impact of time series analysis on scientific applications can be partially documented by producing an abbreviated listing of the diverse fields
+in which important time series problems may arise. For example, many familiar time series occur in the field of economics, where we are continually
+exposed to daily stock market quotations or monthly unemployment figures.
+ments. An epidemiologist might be interested in the number of influenza cases
+observed over some time period. In medicine, blood pressure measurements
+traced over time could be useful for evaluating drugs used in treating hypertension. Functional magnetic resonance imaging of brain-wave time series
+patterns might be used to study how the brain reacts to certain stimuli under
+various experimental conditions.
+Many of the most intensive and sophisticated applications of time series
+methods have been to problems in the physical and environmental sciences.
+This fact accounts for the basic engineering flavor permeating the language of
+time series analysis. One of the earliest recorded series is the monthly sunspot
+numbers studied by Schuster (1906). More modern investigations may center on whether a warming is present in global temperature measurements
+1
+Social scientists follow population series, such as birthrates or school enrollSpringer Texts in Statistics, DOI 10.1007/978-1-4419-7865-3_1,
+© Springer Science+Business Media, LLC 2011
+R.H. Shumway and D.S. Stoffer, Time Series Analysis and Its Applications: With R Examples,
+2 1 Characteristics of Time Series
+or whether levels of pollution may influence daily mortality in Los Angeles.
+The modeling of speech series is an important problem related to the efficient
+transmission of voice recordings. Common features in a time series characteristic known as the power spectrum are used to help computers recognize and
+translate speech. Geophysical time series such as those produced by yearly depositions of various kinds can provide long-range proxies for temperature and
+rainfall. Seismic recordings can aid in mapping fault lines or in distinguishing
+between earthquakes and nuclear explosions.
+The above series are only examples of experimental databases that can
+be used to illustrate the process by which classical statistical methodology
+can be applied in the correlated time series framework. In our view, the first
+step in any time series investigation always involves careful scrutiny of the
+recorded data plotted over time. This scrutiny often suggests the method of
+analysis as well as statistics that will be of use in summarizing the information
+in the data. Before looking more closely at the particular statistical methods,
+it is appropriate to mention that two separate, but not necessarily mutually
+exclusive, approaches to time series analysis exist, commonly identified as the
+time domain approach and the frequency domain approach.
+The time domain approach is generally motivated by the presumption
+that correlation between adjacent points in time is best explained in terms
+of a dependence of the current value on past values. The time domain approach focuses on modeling some future value of a time series as a parametric
+function of the current and past values. In this scenario, we begin with linear
+regressions of the present value of a time series on its own past values and
+on the past values of other series. This modeling leads one to use the results
+of the time domain approach as a forecasting tool and is particularly popular
+with economists for this reason.
+One approach, advocated in the landmark work of Box and Jenkins (1970;
+see also Box et al., 1994), develops a systematic class of models called autoregressive integrated moving average (ARIMA) models to handle timecorrelated modeling and forecasting. The approach includes a provision for
+treating more than one input series through multivariate ARIMA or through
+transfer function modeling. The defining feature of these models is that they
+are multiplicative models, meaning that the observed data are assumed to
+result from products of factors involving differential or difference equation
+operators responding to a white noise input.
+A more recent approach to the same problem uses additive models more
+familiar to statisticians. In this approach, the observed data are assumed to
+result from sums of series, each with a specified time series structure; for example, in economics, assume a series is generated as the sum of trend, a seasonal
+effect, and error. The state-space model that results is then treated by making
+judicious use of the celebrated Kalman filters and smoothers, developed originally for estimation and control in space applications. Two relatively complete
+presentations from this point of view are in Harvey (1991) and Kitagawa and
+Gersch (1996).</p>
+	</main>
+
+	<footer>
+		&copy; 2023 Blue Website. All rights reserved.
+	</footer>
+</body>
+</html>
